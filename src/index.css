@@ -1,13 +1,95 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #dfdfdf;
+  font-family: Verdana;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 300px;
+}
+.main header {
+  flex: 100%;
+  margin: 20px 0px;
+  padding: 10px;
+}
+.main header h1 span {
+  color: #fc2d68;
+}
+.main main {
+  flex: 100%;
+  margin: 20px 0px;
+  font-size: 20px;
+  height: 300px;
+  overflow: scroll;
+  scrollbar-color: #fc2d68 #dfdfdf;
+  scrollbar-width: thin;
+}
+.main main ul {
+  list-style-type: none;
+  padding: 5px;
+}
+.main main ul li {
+  padding: 5px;
+}
+.main main ul li button {
+  background-color: #fc2d68;
+  color: black;
+  cursor: pointer;
+  min-width: fit-content;
+  min-height: fit-content;
+  text-align: center;
+  border: none;
+}
+.main main ul li input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.main main ul li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+.main nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  margin: 20px 0;
+  padding: 10px;
+}
+.main nav div {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main nav div form {
+  width: 100%;
+}
+.main nav div form input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.main nav div button {
+  background: #fc2d68;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 20%;
+}
+.main nav div p {
+  flex: 100%;
+}
+.main nav div button {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
 }
